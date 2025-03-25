@@ -19,11 +19,27 @@ public class Main{
 
         //CALCULATION SECTION #2
         month = 03;
-        day = 02;
+        day = 03;
         year = 2025;
         jdnDate = Main.calcJulianDate(month, day, year);
         //OUTPUT SECTION  #2
+        System.out.println("The claculated Julian date March 03, 2025 is: " + jdnDate);
+
+        //CALCULATION SECTION #3
+        month = 03;
+        day = 25;
+        year = 2025;
+        jdnDate = Main.calcJulianDate(month, day, year);
+        //OUTPUT SECTION #3
         System.out.println("The claculated Julian date for today is: " + jdnDate);
+
+        //CALCULATION SECTION #4
+        month = 03;
+        day = 05;
+        year = 2005;
+        jdnDate = Main.calcJulianDate(month, day, year);
+        //OUTPUT SECTION #4
+        System.out.println("The claculated Julian date for my birthday is: " + jdnDate);
     }
 
     public static int calcJulianDate(int month, int day, int year){
